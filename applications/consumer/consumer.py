@@ -10,7 +10,7 @@ def callback(ch, method, properties, body):
     print(' [x] Received '+ str(body))
 
 channel.basic_consume(
-    'jobs',
+    'frontendSend',
     callback,
     auto_ack=True
 )
