@@ -15,8 +15,8 @@ i = 10
 while i>0:
     channel.basic_publish(
         body='Hello RabitMQ!',
-        exchange='backend',
-        routing_key='test_backend'
+        exchange='frontend',
+        routing_key='test_frontend'
     )
     i = i-1
 
