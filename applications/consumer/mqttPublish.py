@@ -9,15 +9,19 @@ def on_connect(client, userdata, flags, rc):
 
 # The callback for when a PUBLISH message is received from the server.
 def on_message(client, userdata, msg):
-    #print(msg.topic+" "+str(msg.payload))
-    con.callback
+    print(msg.topic+" "+str(msg.payload))
+
+    ret = con.callback
+    #client.publish(ret.topic, ret.payload)
+    print(ret+":"+client.publish("test", ret))
     pass
+
 
 client = mqtt.Client()
 client.on_connect = on_connect
 client.on_message = on_message
 
-client.connect("mqtt.eclipseprojects.io", 1883, 60)
+client.connect("199.244.104.202", 1883, 60)
 
 # Blocking call that processes network traffic, dispatches callbacks and
 # handles reconnecting.
