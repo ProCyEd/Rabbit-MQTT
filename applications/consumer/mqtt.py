@@ -6,7 +6,7 @@ def on_publish(client, userdata, result):
     pass
 
 def on_log(client, userdata, level, buf):
-    print('log: {0}', buf)
+    print(f'log: {buf}')
 
 def on_disconnect(client, userdata, rc=0):
     logging.debug("Disconnected result code: {0}", str(rc))
