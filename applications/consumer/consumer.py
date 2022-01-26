@@ -1,5 +1,6 @@
+from ast import Break
 import pika, os
-import paho.mqtt.client as paho
+# import paho.mqtt.client as paho
 import mqtt
 
 url ='amqps://msdqunsz:8HfRRHR4k_1MnSrcSnL2dFadlDbYhsGJ@fish.rmq.cloudamqp.com/msdqunsz'#'amqp://guest:guest@localhost:5672/')#'amqps://msdqunsz:8HfRRHR4k_1MnSrcSnL2dFadlDbYhsGJ@fish.rmq.cloudamqp.com/msdqunsz')
@@ -18,24 +19,34 @@ channel = connection.channel()#start channel
 
 def callback(ch, method, properties, body):
 
-    print(' [x] Received '+ str(body))
-    if body == '"on"':
+    print(f' [x] Received {body}')
+    if str(body) == "b'on'":
+        print("hehe")
         body = 'on'
-    else:
+        mqtt.connect(body)
+    elif str(body) == "b'off'":
+        print('heler')
         body = 'off'
+        mqtt.connect(body)
+    elif str(body) == "b'disconnect'":
+        print('unsub')
+        mqtt.client1.on_disconnect = mqtt.on_disconnect
+        
+    # mqtt.connect(body)
     # client1= paho.Client('control1')
     # client1.on_publish = on_publish
     # client1.connect(broker)
     #ret=client1.publish("test", body)
-    ret=mqtt.client1.publish("test", body)
-    connection.close()
+    
+    # ret=client1.publish("test", body)
+    
     
 
-# channel.basic_consume(
-#     'frontendSend',
-#     callback,
-#     auto_ack=True
-# )
+channel.basic_consume(
+    'frontendSend',
+    callback,
+    auto_ack=True
+)
 
 print(' [*]waiting for messages: ')
 channel.start_consuming()

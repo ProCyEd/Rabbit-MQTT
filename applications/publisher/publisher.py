@@ -11,14 +11,14 @@ channel = connection.channel()
 #channel.queue_bind('test_queue', 'test_exchange', 'tests')#creates binding between queue and exchange
 #channel.queue_bind('backendSend', 'test_exchange', 'tests')
 #publish message
-i = 10
-while i>0:
-    channel.basic_publish(
-        body='Hello RabitMQ!',
+
+
+channel.basic_publish(
+        body='disconnect',
         exchange='frontend',
         routing_key='test_frontend'
-    )
-    i = i-1
+)
+   
 
 
 print('Message sent.')
