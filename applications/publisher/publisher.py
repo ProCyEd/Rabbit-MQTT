@@ -14,7 +14,7 @@ channel = connection.channel()
 
 
 channel.basic_publish(
-        body='disconnect',
+        body='off',
         exchange='frontend',
         routing_key='test_frontend'
 )

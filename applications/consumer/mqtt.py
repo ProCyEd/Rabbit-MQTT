@@ -2,10 +2,12 @@ import logging
 import paho.mqtt.client as paho
 import time
 
+
 client1= paho.Client('control1')
 def on_disconnect(client, userdata, rc=0):
     logging.debug("Disconnected result code: {0}", str(rc))
     client1.loop_stop()
+    
 
 def connect(body):
     def on_publish(client, userdata, result):
