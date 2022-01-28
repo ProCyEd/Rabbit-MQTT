@@ -6,16 +6,21 @@ connection = pika.BlockingConnection(params) #waits for all requests to complete
 
 channel = connection.channel()
 
-channel.exchange_declare('test_exchange')#declare exchange
-channel.queue_declare(queue='test_queue')#declare queue
+#channel.exchange_declare('test_exchange')#declare exchange
+#channel.queue_declare(queue='backendSend')#declare queue
 #channel.queue_bind('test_queue', 'test_exchange', 'tests')#creates binding between queue and exchange
-channel.queue_bind('jobs', 'test_exchange', 'tests')
+#channel.queue_bind('backendSend', 'test_exchange', 'tests')
 #publish message
+
+
 channel.basic_publish(
-body='Hello RabitMQ!',
-exchange='test_exchange',
-routing_key='tests'
+        body='off',
+        exchange='frontend',
+        routing_key='test_frontend'
 )
+   
+
+
 print('Message sent.')
 channel.close()
 connection.close()
