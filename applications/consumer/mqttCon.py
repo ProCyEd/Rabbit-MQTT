@@ -24,7 +24,7 @@ def connectCon():
     client2.connect(broker,1883,60)#keeps the mqtt broker connection open for 60 seconds
     client2.loop_start()
     ret=client2.on_message
-    time.sleep(4)
+    # time.sleep(4)
 
 # if client1.on_unsubscribe():
 #     on_disconnect()
