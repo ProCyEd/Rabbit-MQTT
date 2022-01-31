@@ -1,7 +1,7 @@
 from ast import Break
 import pika, os
 # import paho.mqtt.client as paho
-import mqttPub
+import mqttPub as mqtt
 
 url ='amqps://msdqunsz:8HfRRHR4k_1MnSrcSnL2dFadlDbYhsGJ@fish.rmq.cloudamqp.com/msdqunsz'#'amqp://guest:guest@localhost:5672/')#'amqps://msdqunsz:8HfRRHR4k_1MnSrcSnL2dFadlDbYhsGJ@fish.rmq.cloudamqp.com/msdqunsz')
 params = pika.URLParameters(url)
