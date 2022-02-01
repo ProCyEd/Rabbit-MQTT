@@ -2,11 +2,13 @@ import logging
 import paho.mqtt.client as paho
 import time
 import json
+import consumer
 
 client1= paho.Client('control1')
 def on_disconnect(client, userdata, rc=0):
     logging.debug("Disconnected result code: {0}", str(rc))
-    client1.loop_stop()
+    consumer.channel.close()
+    #client1.loop_stop()
 def convert_JSON(message):
     conv = json.loads(message)
     # boxId = conv['boxId']
@@ -35,5 +37,3 @@ def connect(body):
     ret=client1.publish("test", body)
     time.sleep(4)
 
-# if client1.on_unsubscribe():
-#     on_disconnect()
