@@ -5,17 +5,9 @@ import json
 import consumer
 
 client1= paho.Client('control1')
-def on_disconnect(client, rc=0):
-    logging.debug("Disconnected result code: {0}", str(rc))
-    consumer.channel.close()
+
     
-    
-# def convert_JSON(message):
-#     conv = json.loads(message)
-#     # boxId = conv['boxId']
-#     # equipmentId = conv['equipmentId']
-#     msg = conv['message']
-#     ## this is where we run the queries to get the boxname and equipment ip
+
 def on_publish(client, userdata, result):
     print('data published \n')
     pass
@@ -29,8 +21,6 @@ def connects(body):
     client1.on_publish = on_publish
     client1.on_log = on_log
     client1.connect(broker,1883,60)#keeps the mqtt broker connection open for 60 seconds
-    #client1.loop_forever
     ret=client1.publish("test", body)
-if __name__ =="__main__":
-   pass
+
 

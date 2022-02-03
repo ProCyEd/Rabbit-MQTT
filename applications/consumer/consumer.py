@@ -19,9 +19,7 @@ def callback(ch, method, properties, body):
     elif str(body) == "b'off'":
         body = 'off'
         mqtt.connects(body)
-    elif str(body) == "b'disconnect'":
-        print('unsub')
-        mqtt.on_disconnect(mqtt.client1)
+    
     
     
 
@@ -33,7 +31,5 @@ channel.basic_consume(
 
 print(' [*]waiting for messages: ')
 channel.start_consuming()
-connection.close()
 
-if __name__ =="__main__":
-   pass
+
