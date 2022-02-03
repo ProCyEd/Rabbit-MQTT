@@ -10,10 +10,10 @@ def main():
     #     auto_ack=True
     #     )
     
-    # if mqtt.client1.unsubscribe:
+    # if mqttpub.client1.unsubscribe:
     #     print('unsub')
-    #     mqtt.client1.on_disconnect = mqtt.on_disconnect
-    #     mqtt.on_disconnect(mqtt.client1)
+    #     mqttpub.client1.on_disconnect = mqttpub.on_disconnect
+    #     mqttpub.on_disconnect(mqttpub.client1)
     pass
 if __name__ =="__main__":
    

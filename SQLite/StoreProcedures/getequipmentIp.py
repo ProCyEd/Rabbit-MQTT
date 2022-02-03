@@ -5,9 +5,11 @@ def getEquipId(equipment_id, box_sid):
 
     c = conn.cursor()
 
-    c.execute(""" 
-        SELECT * FROM equipment WHERE equipment.equipment_id = equipment_id AND equipment.box_sid = box_sid
-    """)
+   
+    query = """SELECT 1 FROM equipment WHERE equipment.equipment_id = %s AND equipment.box_sid = %s"""
+    tuple = (equipment_id, box_sid)
+    c.execute(query, tuple)
+
 
     items = c.fetchall()
     conn.commit()
