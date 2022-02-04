@@ -7,13 +7,6 @@ def publishCon(msg):
 
         channel = connection.channel()
 
-        #channel.exchange_declare('test_exchange')#declare exchange
-        #channel.queue_declare(queue='backendSend')#declare queue
-        #channel.queue_bind('test_queue', 'test_exchange', 'tests')#creates binding between queue and exchange
-        #channel.queue_bind('backendSend', 'test_exchange', 'tests')
-        #publish message
-
-
         channel.basic_publish(
                 body=msg,
                 exchange='frontend',
