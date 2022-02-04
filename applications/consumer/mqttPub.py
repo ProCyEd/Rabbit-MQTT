@@ -6,14 +6,15 @@ import consumer
 
 client1= paho.Client('control1')
 
-    
 
 def on_publish(client, userdata, result):
     print('data published \n')
     pass
 
+
 def on_log(client, userdata, level, buf):
         print(f'log: {buf}')
+  
         
 def connects(body):
    

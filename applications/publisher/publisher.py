@@ -4,7 +4,6 @@ def publishCon(msg):
         url = os.environ.get('CLOUDAMQP_URL', 'amqps://msdqunsz:8HfRRHR4k_1MnSrcSnL2dFadlDbYhsGJ@fish.rmq.cloudamqp.com/msdqunsz')#'amqp://guest:guest@localhost:5672/')#
         params = pika.URLParameters(url)
         connection = pika.BlockingConnection(params) #waits for all requests to complete
-
         channel = connection.channel()
 
         channel.basic_publish(
@@ -12,6 +11,7 @@ def publishCon(msg):
                 exchange='frontend',
                 routing_key='test_frontend'
         )
+
         print('Message sent.')
         channel.close()
         connection.close()

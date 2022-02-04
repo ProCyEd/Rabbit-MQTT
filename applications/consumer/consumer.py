@@ -9,7 +9,6 @@ connection = pika.BlockingConnection(params)
 channel = connection.channel()#start channel
 
 
-
 def callback(ch, method, properties, body):
 
     print(f' [x] Received {body}')
@@ -19,8 +18,6 @@ def callback(ch, method, properties, body):
     elif str(body) == "b'off'":
         body = 'off'
         mqtt.connects(body)
-    
-    
     
 
 channel.basic_consume(

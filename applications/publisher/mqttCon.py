@@ -10,9 +10,11 @@ def on_disconnect(client, userdata, rc=0):
     logging.debug("Disconnected result code: {0}", str(rc))
     client2.loop_stop()
 
+
 def on_message(client, userdata, message):
     print("received message: ", str(message.payload.decode("utf-8")))
     pub.publishCon(message)
+
 
 def connectCon():
    
@@ -26,6 +28,8 @@ def connectCon():
     client2.loop_forever()
     # ret=client2.on_message
     # time.sleep(4)
+
+    
 if __name__ =="__main__":
    connectCon()
 # if client1.on_unsubscribe():
