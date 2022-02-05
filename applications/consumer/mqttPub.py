@@ -19,7 +19,7 @@ def on_log(client, userdata, level, buf):
 
 def connects(body):
    
-    broker = '199.244.104.202'
+    
     client1.on_publish = on_publish
     client1.on_log = on_log
     client1.connect(broker,1883,60)#keeps the mqtt broker connection open for 60 seconds

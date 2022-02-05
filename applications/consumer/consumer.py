@@ -3,7 +3,7 @@ import pika, os
 import mqttPub as mqtt
 
 
-url ='amqps://msdqunsz:8HfRRHR4k_1MnSrcSnL2dFadlDbYhsGJ@fish.rmq.cloudamqp.com/msdqunsz'
+
 params = pika.URLParameters(url)
 connection = pika.BlockingConnection(params)
 channel = connection.channel()#start channel

@@ -20,7 +20,6 @@ def connectCon():
    
     print('running mqttcon')
 
-    broker = '199.244.104.202'
     # client1= paho.Client('control1')
     
     client2.on_message = on_message
