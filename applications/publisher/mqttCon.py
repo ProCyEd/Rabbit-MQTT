@@ -4,6 +4,7 @@ import time
 import publisher as pub
 
 
+
 client2= paho.Client('control2')
 def on_disconnect(client, userdata, rc=0):
     time.sleep(1)
@@ -14,6 +15,7 @@ def on_disconnect(client, userdata, rc=0):
 def on_message(client, userdata, message):
     print("received message: ", str(message.payload.decode("utf-8")))
     pub.publishCon(message)
+
 
 
 def connectCon():
