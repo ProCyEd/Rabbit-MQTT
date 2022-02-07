@@ -16,7 +16,14 @@ c.execute("""
         equipment_id INTEGER PRIMARY KEY,
         box_sid INTEGER,
         equipment_name TEXT,
+        equipment_state INTEGER,
         equipment_ip TEXT,
         FOREIGN KEY(box_sid) REFERENCES boxes(sid)
+    )
+""")
+
+c.execute(""" 
+    CREATE TABLE log(
+
     )
 """)
