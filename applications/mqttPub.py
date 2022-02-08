@@ -1,8 +1,4 @@
-
-from concurrent.futures import thread
-
 import paho.mqtt.client as paho
-import time
 import publisher.publisher as pub
 
 
@@ -27,12 +23,7 @@ def connectCon():
     client2.connect(broker,1883,60)#keeps the mqtt broker connection open for 60 seconds
     
     client2.loop_forever()
-    
-    #time.sleep(3)
-    
-    
-    
-    # ret=client2.on_message
+
 
 
 if __name__ =="__main__":
