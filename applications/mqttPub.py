@@ -28,7 +28,7 @@ def connectCon():
     
     client2.loop_forever()
     
-    time.sleep(3)
+    #time.sleep(3)
     
     
     
