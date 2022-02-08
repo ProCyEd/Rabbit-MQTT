@@ -1,8 +1,7 @@
 import logging
 import paho.mqtt.client as paho
 import time
-import json
-import consumer
+
 
 client1= paho.Client('control1')
 
@@ -14,6 +13,7 @@ def on_publish(client, userdata, result):
 
 def on_log(client, userdata, level, buf):
         print(f'log con: {buf}')
+        # print(logging.)
         print(f'log data: {userdata}')
 
 
