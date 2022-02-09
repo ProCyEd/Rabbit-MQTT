@@ -8,8 +8,8 @@ def publishCon(msg):
 
         channel.basic_publish(
                 body=msg,
-                exchange='frontend',
-                routing_key='test_frontend'
+                exchange='backend',
+                routing_key='test_backend'
         )
 
         print('Message sent.')

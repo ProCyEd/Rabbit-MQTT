@@ -1,5 +1,5 @@
 import sqlite3
-
+import sys
 
 def getAllBoxes():
     conn = sqlite3.connect('IoT_Boxes.db')
