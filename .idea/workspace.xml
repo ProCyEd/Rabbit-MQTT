@@ -1,16 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d68da699-3141-4ad3-8f94-a76d6df203d3" name="Changes" comment="">
+    <list default="true" id="d68da699-3141-4ad3-8f94-a76d6df203d3" name="Changes" comment="fixed all the import issues and go the database up and running">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IoT_Boxes.db" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/applications/SQLite/StoreProcedures/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/applications/SQLite/StoreProcedures/getBoxes.py" beforeDir="false" afterPath="$PROJECT_DIR$/applications/SQLite/StoreProcedures/getBoxes.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/applications/SQLite/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/applications/SQLite/createDB.py" beforeDir="false" afterPath="$PROJECT_DIR$/expendable/createDB.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/applications/mqttPub.py" beforeDir="false" afterPath="$PROJECT_DIR$/applications/mqttPub.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/applications/refreshFrontEnd.py" beforeDir="false" afterPath="$PROJECT_DIR$/applications/refreshFrontEnd.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +32,7 @@
       <recent name="C:\Users\cammi\OneDrive\Documents\GitHub\Rabbit-MQTT\applications\SQLite" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.createDB">
+  <component name="RunManager" selected="Python.Rabbit-MQTT">
     <configuration name="Rabbit-MQTT" type="PythonConfigurationType" factoryName="Python">
       <module name="Rabbit-MQTT" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -123,8 +115,16 @@
       <option name="presentableId" value="Default" />
       <updated>1643408009567</updated>
       <workItem from="1643408013269" duration="78000" />
-      <workItem from="1644428835726" duration="6134000" />
+      <workItem from="1644428835726" duration="7412000" />
     </task>
+    <task id="LOCAL-00001" summary="fixed all the import issues and go the database up and running">
+      <created>1644465323132</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1644465323132</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -140,6 +140,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="fixed all the import issues and go the database up and running" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed all the import issues and go the database up and running" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
