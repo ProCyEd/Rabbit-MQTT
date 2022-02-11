@@ -2,14 +2,16 @@ import sqlite3
 
 
 def getAllBoxes():
-    conn = sqlite3.connect('IoT_Boxes.db')
+    conn = sqlite3.connect('IoT_Boxes')
 
     c = conn.cursor()
 
-    c.execute("SELECT * FROM  boxes")
-
+    c.execute("SELECT * FROM boxes")
     items = c.fetchall()
 
     conn.commit()
     conn.close()
     return items
+
+
+print(getAllBoxes())

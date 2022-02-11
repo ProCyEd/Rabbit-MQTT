@@ -12,10 +12,10 @@ channel = connection.channel()#start channel
 def callback(ch, method, properties, body):
 
     print(f' [x] Received {body}')
-    if str(body) == "b'on'":
+    if str(body) == 'b"on"':
         body = 'on'
         mqtt.connects(body)
-    elif str(body) == "b'off'":
+    elif str(body) == 'b"off"':
         body = 'off'
         mqtt.connects(body)
     

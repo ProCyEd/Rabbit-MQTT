@@ -1,6 +1,6 @@
 import sqlite3
 
-conn = sqlite3.connect('../applications/SQLite/IoT_Boxes')
+conn = sqlite3.connect('../applications/IoT_Boxes')
 
 c = conn.cursor()
 
