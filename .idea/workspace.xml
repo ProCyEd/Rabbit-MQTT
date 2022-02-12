@@ -1,16 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d68da699-3141-4ad3-8f94-a76d6df203d3" name="Changes" comment="fixed db issue and tested some queries">
-      <change afterPath="$PROJECT_DIR$/applications/SQLite/StoreProcedures/insertBoxes.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/applications/SQLite/StoreProcedures/insertEquipment.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c03a0d36-ebbc-4853-8ddd-d6ed5238b12c.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/applications/SQLite/StoreProcedures/insertLog.py" beforeDir="false" afterPath="$PROJECT_DIR$/applications/SQLite/StoreProcedures/insertLog.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/applications/SQLite/StoreProcedures/insertSubscribed.py" beforeDir="false" afterPath="$PROJECT_DIR$/applications/SQLite/StoreProcedures/insertSubscribed.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/applications/SQLite/StoreProcedures/insertToken.py" beforeDir="false" afterPath="$PROJECT_DIR$/applications/SQLite/StoreProcedures/insertToken.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/applications/SQLite/StoreProcedures/removeSubscribed.py" beforeDir="false" afterPath="$PROJECT_DIR$/applications/SQLite/StoreProcedures/removeSubscribed.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/applications/SQLite/StoreProcedures/removeToken.py" beforeDir="false" afterPath="$PROJECT_DIR$/applications/SQLite/StoreProcedures/removeToken.py" afterDir="false" />
+    <list default="true" id="d68da699-3141-4ad3-8f94-a76d6df203d3" name="Changes" comment="added two insert Queries">
+      <change beforePath="$PROJECT_DIR$/applications/SQLite/StoreProcedures/getBoxes.py" beforeDir="false" afterPath="$PROJECT_DIR$/applications/SQLite/StoreProcedures/getBoxes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/applications/refreshFrontEnd.py" beforeDir="false" afterPath="$PROJECT_DIR$/applications/refreshFrontEnd.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -182,7 +175,7 @@
       <workItem from="1643408013269" duration="78000" />
       <workItem from="1644428835726" duration="7412000" />
       <workItem from="1644540423568" duration="3006000" />
-      <workItem from="1644625215317" duration="630000" />
+      <workItem from="1644625215317" duration="1050000" />
     </task>
     <task id="LOCAL-00001" summary="fixed all the import issues and go the database up and running">
       <created>1644465323132</created>
@@ -198,7 +191,14 @@
       <option name="project" value="LOCAL" />
       <updated>1644551056060</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="added two insert Queries">
+      <created>1644626021781</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1644626021782</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -219,7 +219,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="fixed all the import issues and go the database up and running" />
     <MESSAGE value="fixed db issue and tested some queries" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed db issue and tested some queries" />
+    <MESSAGE value="added two insert Queries" />
+    <option name="LAST_COMMIT_MESSAGE" value="added two insert Queries" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

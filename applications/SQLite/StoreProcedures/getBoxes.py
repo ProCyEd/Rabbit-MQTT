@@ -9,6 +9,7 @@ def getAllBoxes():
     c.execute("SELECT * FROM boxes")
     items = c.fetchall()
 
+
     conn.commit()
     conn.close()
     return items

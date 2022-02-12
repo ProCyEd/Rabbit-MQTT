@@ -4,7 +4,7 @@ import publisher.publisher as pub
 import json
 # def refresh():
 while True:
-    #print(getAllBoxes())
+
     l = json.dump(getAllBoxes())
     print(l)
     # pub.publishCon(getAllBoxes())
