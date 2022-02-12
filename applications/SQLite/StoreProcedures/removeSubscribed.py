@@ -2,7 +2,7 @@ import sqlite3
 
 
 def getEquipId(session_token):
-    conn = sqlite3.connect('IoT_Boxes.db')
+    conn = sqlite3.connect('IoT_Boxes')
 
     c = conn.cursor()
 

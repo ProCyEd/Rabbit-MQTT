@@ -1,29 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d68da699-3141-4ad3-8f94-a76d6df203d3" name="Changes" comment="fixed all the import issues and go the database up and running">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/00f53d1c-3b7d-4fae-8bcb-152439819f73.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/094fb748-1a23-48e0-b619-6a712e222181.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/1c0e8fd5-de05-4db3-a159-c2ca4de7e9ba.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/3a79894b-a924-445e-830f-8506e6873fb7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/98b3001b-e318-42dc-867c-701099e929de.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c3103faf-aa19-4281-a548-8780d6bc8009.xml" beforeDir="false" />
+    <list default="true" id="d68da699-3141-4ad3-8f94-a76d6df203d3" name="Changes" comment="fixed db issue and tested some queries">
+      <change afterPath="$PROJECT_DIR$/applications/SQLite/StoreProcedures/insertBoxes.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/applications/SQLite/StoreProcedures/insertEquipment.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c03a0d36-ebbc-4853-8ddd-d6ed5238b12c.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/applications/SQLite/IoT_Boxes" beforeDir="false" afterPath="$PROJECT_DIR$/applications/IoT_Boxes" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/applications/SQLite/StoreProcedures/getBoxes.py" beforeDir="false" afterPath="$PROJECT_DIR$/applications/SQLite/StoreProcedures/getBoxes.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/applications/consumer.py" beforeDir="false" afterPath="$PROJECT_DIR$/applications/consumer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/applications/refreshFrontEnd.py" beforeDir="false" afterPath="$PROJECT_DIR$/applications/refreshFrontEnd.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/expendable/createDB.py" beforeDir="false" afterPath="$PROJECT_DIR$/expendable/createDB.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/applications/SQLite/StoreProcedures/insertLog.py" beforeDir="false" afterPath="$PROJECT_DIR$/applications/SQLite/StoreProcedures/insertLog.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/applications/SQLite/StoreProcedures/insertSubscribed.py" beforeDir="false" afterPath="$PROJECT_DIR$/applications/SQLite/StoreProcedures/insertSubscribed.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/applications/SQLite/StoreProcedures/insertToken.py" beforeDir="false" afterPath="$PROJECT_DIR$/applications/SQLite/StoreProcedures/insertToken.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/applications/SQLite/StoreProcedures/removeSubscribed.py" beforeDir="false" afterPath="$PROJECT_DIR$/applications/SQLite/StoreProcedures/removeSubscribed.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/applications/SQLite/StoreProcedures/removeToken.py" beforeDir="false" afterPath="$PROJECT_DIR$/applications/SQLite/StoreProcedures/removeToken.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="PackageJsonUpdateNotifier">
+    <dismissed value="$PROJECT_DIR$/package.json" />
   </component>
   <component name="ProjectId" id="24LRhagjKlRwIh0NzpBcZitOv7i" />
   <component name="ProjectViewState">
@@ -176,7 +181,8 @@
       <updated>1643408009567</updated>
       <workItem from="1643408013269" duration="78000" />
       <workItem from="1644428835726" duration="7412000" />
-      <workItem from="1644540423568" duration="2796000" />
+      <workItem from="1644540423568" duration="3006000" />
+      <workItem from="1644625215317" duration="630000" />
     </task>
     <task id="LOCAL-00001" summary="fixed all the import issues and go the database up and running">
       <created>1644465323132</created>
@@ -185,7 +191,14 @@
       <option name="project" value="LOCAL" />
       <updated>1644465323132</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="fixed db issue and tested some queries">
+      <created>1644551056060</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1644551056060</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -205,7 +218,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="fixed all the import issues and go the database up and running" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed all the import issues and go the database up and running" />
+    <MESSAGE value="fixed db issue and tested some queries" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed db issue and tested some queries" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
