@@ -1,7 +1,7 @@
 import sqlite3
 
 
-def getEquipId(equipment_id, box_id):
+def getEquipIP(equipment_id, box_id):
     conn = sqlite3.connect('IoT_Boxes.db')
 
     c = conn.cursor()

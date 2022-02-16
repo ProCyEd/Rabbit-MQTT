@@ -1,6 +1,6 @@
 
 import pika, os
-import mqttPub as mqtt
+import mqttCon as mqtt
 
 
 url ='amqps://msdqunsz:8HfRRHR4k_1MnSrcSnL2dFadlDbYhsGJ@fish.rmq.cloudamqp.com/msdqunsz'
@@ -11,12 +11,15 @@ channel = connection.channel()#start channel
 
 def callback(ch, method, properties, body):
 
-    print(f' [x] Received {body}')
-    if str(body) == 'b"on"':
-        body = 'on'
+    print(f' [x] Received {str(body)}')
+    if str(body).__contains__('True'):
+        print(body)
+        body = 'True'
         mqtt.connects(body)
-    elif str(body) == 'b"off"':
-        body = 'off'
+    elif str(body).__contains__('False'):
+        #print('[*]' + body)
+        body = 'False'
+
         mqtt.connects(body)
     
 
