@@ -1,10 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d68da699-3141-4ad3-8f94-a76d6df203d3" name="Changes" comment="routing back and forth now">
+    <list default="true" id="d68da699-3141-4ad3-8f94-a76d6df203d3" name="Changes" comment="update publish">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/applications/SQLite/StoreProcedures/getBoxes.py" beforeDir="false" afterPath="$PROJECT_DIR$/applications/SQLite/StoreProcedures/getBoxes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/applications/SQLite/StoreProcedures/getEquipmentIp.py" beforeDir="false" afterPath="$PROJECT_DIR$/applications/SQLite/StoreProcedures/getEquipmentIp.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/applications/SQLite/StoreProcedures/insertBoxes.py" beforeDir="false" afterPath="$PROJECT_DIR$/applications/SQLite/StoreProcedures/insertBoxes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/applications/SQLite/StoreProcedures/insertEquipment.py" beforeDir="false" afterPath="$PROJECT_DIR$/applications/SQLite/StoreProcedures/insertEquipment.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/applications/consumer.py" beforeDir="false" afterPath="$PROJECT_DIR$/applications/consumer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/applications/mqttCon.py" beforeDir="false" afterPath="$PROJECT_DIR$/applications/mqttCon.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/applications/mqttPub.py" beforeDir="false" afterPath="$PROJECT_DIR$/applications/mqttPub.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/applications/publisher/publisher.py" beforeDir="false" afterPath="$PROJECT_DIR$/applications/publisher/publisher.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -226,7 +232,8 @@
       <workItem from="1644858011481" duration="2230000" />
       <workItem from="1644969848757" duration="7168000" />
       <workItem from="1645049196725" duration="60000" />
-      <workItem from="1645061542912" duration="3676000" />
+      <workItem from="1645061542912" duration="3703000" />
+      <workItem from="1645135964693" duration="904000" />
     </task>
     <task id="LOCAL-00001" summary="fixed all the import issues and go the database up and running">
       <created>1644465323132</created>
@@ -270,7 +277,14 @@
       <option name="project" value="LOCAL" />
       <updated>1644981959045</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="update publish">
+      <created>1645067233493</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1645067233493</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -294,7 +308,8 @@
     <MESSAGE value="added two insert Queries" />
     <MESSAGE value="query to json" />
     <MESSAGE value="routing back and forth now" />
-    <option name="LAST_COMMIT_MESSAGE" value="routing back and forth now" />
+    <MESSAGE value="update publish" />
+    <option name="LAST_COMMIT_MESSAGE" value="update publish" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
