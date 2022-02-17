@@ -11,7 +11,7 @@ channel = connection.channel()#start channel
 
 def callback(ch, method, properties, body):
 
-    print(f' [x] Received {str(body)}')
+    print(f' [x] Received {body}')
     if str(body).__contains__('True'):
         print(body)
         body = 'True'
