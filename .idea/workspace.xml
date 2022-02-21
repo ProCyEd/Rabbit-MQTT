@@ -1,16 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d68da699-3141-4ad3-8f94-a76d6df203d3" name="Changes" comment="update publish">
+    <list default="true" id="d68da699-3141-4ad3-8f94-a76d6df203d3" name="Changes" comment="document everything">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/297ec8c8-2299-4823-9080-27a297bf9a4f.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/297ec8c8-2299-4823-9080-27a297bf9a4f.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/applications/SQLite/StoreProcedures/getBoxes.py" beforeDir="false" afterPath="$PROJECT_DIR$/applications/SQLite/StoreProcedures/getBoxes.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/applications/SQLite/StoreProcedures/getEquipmentIp.py" beforeDir="false" afterPath="$PROJECT_DIR$/applications/SQLite/StoreProcedures/getEquipmentIp.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/applications/SQLite/StoreProcedures/insertBoxes.py" beforeDir="false" afterPath="$PROJECT_DIR$/applications/SQLite/StoreProcedures/insertBoxes.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/applications/SQLite/StoreProcedures/insertEquipment.py" beforeDir="false" afterPath="$PROJECT_DIR$/applications/SQLite/StoreProcedures/insertEquipment.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/applications/consumer.py" beforeDir="false" afterPath="$PROJECT_DIR$/applications/consumer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/applications/mqttCon.py" beforeDir="false" afterPath="$PROJECT_DIR$/applications/mqttCon.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/applications/mqttPub.py" beforeDir="false" afterPath="$PROJECT_DIR$/applications/mqttPub.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/applications/publisher/publisher.py" beforeDir="false" afterPath="$PROJECT_DIR$/applications/publisher/publisher.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +33,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/PycharmProjects/pythonProject/sqliteIoT" />
+    <property name="last_opened_file_path" value="$USER_HOME$/PycharmProjects/pythonProject/CIS303" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
@@ -233,7 +226,9 @@
       <workItem from="1644969848757" duration="7168000" />
       <workItem from="1645049196725" duration="60000" />
       <workItem from="1645061542912" duration="3703000" />
-      <workItem from="1645135964693" duration="904000" />
+      <workItem from="1645135964693" duration="1685000" />
+      <workItem from="1645211862738" duration="138000" />
+      <workItem from="1645213287152" duration="18000" />
     </task>
     <task id="LOCAL-00001" summary="fixed all the import issues and go the database up and running">
       <created>1644465323132</created>
@@ -284,7 +279,21 @@
       <option name="project" value="LOCAL" />
       <updated>1645067233493</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="document everything">
+      <created>1645137049758</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1645137049758</updated>
+    </task>
+    <task id="LOCAL-00009" summary="document everything">
+      <created>1645137055274</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1645137055274</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -309,7 +318,8 @@
     <MESSAGE value="query to json" />
     <MESSAGE value="routing back and forth now" />
     <MESSAGE value="update publish" />
-    <option name="LAST_COMMIT_MESSAGE" value="update publish" />
+    <MESSAGE value="document everything" />
+    <option name="LAST_COMMIT_MESSAGE" value="document everything" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
