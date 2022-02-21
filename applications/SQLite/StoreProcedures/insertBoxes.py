@@ -1,15 +1,16 @@
 import sqlite3
 
 
-def insertToken(session_token, box_id):
+def insertBoxes(box_id, box_name):
     conn = sqlite3.connect('IoT_Boxes')
 
     c = conn.cursor()
     # Query using prepared statement
-    query = """INSERT INTO token (session_token, box_id) values (%s, %s)"""
-    tuple = (session_token, box_id)
+    query = "INSERT INTO boxes (box_id, box_name) VALUES (%s, %s)"
+    tuple = (box_id, box_name)
     c.execute(query, tuple)
-
     conn.commit()
     conn.close()
-    
+
+
+
