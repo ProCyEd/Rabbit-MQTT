@@ -1,7 +1,7 @@
 import sqlite3
 
 
-def insertBoxes(templateName, templateFile):
+def insertTemplate(templateName, templateFile):
     conn = sqlite3.connect('File_Templates')
     read = ''
     with open(templateFile) as f:

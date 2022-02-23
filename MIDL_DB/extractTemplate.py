@@ -1,7 +1,7 @@
 import sqlite3
 
 
-def getEquipIP(template_id):
+def extractTemplate(template_id):
     conn = sqlite3.connect('File_Templates')
 
     c = conn.cursor()
