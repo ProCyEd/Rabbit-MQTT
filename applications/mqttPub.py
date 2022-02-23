@@ -9,7 +9,12 @@ client2 = paho.Client('control2')
 def on_message(client, userdata, message):
     print("received message: ", str(message.payload.decode('utf-8')))
     msg = str(message.payload.decode('utf-8'))
-    pub.publishCon(msg)
+    #pub.publishCon(msg)
+    m_in = json.loads(message)
+    m = json.JSONDecoder.decode(message)
+    print(msg)
+    print(m_in)
+    print(m)
 
 
 def connectCon():
