@@ -1,15 +1,27 @@
 import paho.mqtt.client as paho
 import publisher.publisher as pub
 import json
+from SQLite.StoreProcedures.getBoxes import getAllBoxes
+from SQLite.StoreProcedures.updateEquipment import updateState
 
 client2 = paho.Client('control2')
 
 
 # this will send to the publisher to publisher to Rabbit
 def on_message(client, userdata, message):
-    print("received message: ", str(message.payload.decode('utf-8')))
-    msg = str(message.payload.decode('utf-8'))
-    pub.publishCon(msg)
+    # print("received message: ", str(message.payload.decode('utf-8')))
+    # msg = str(message.payload.decode('utf-8'))
+
+    m = json.loads(message)
+    method = m['method']
+    if method == 'update_equipment_state':
+        updateState(m['equipment_id'], m['box_id'],
+                    m['equipment_state'])
+    # pub.publishCon(getAllBoxes())
+    # m = json.JSONDecoder.decode(message)
+    # print(msg)
+    # print(m_in)
+    # print(m)
 
 
 def connectCon():

@@ -7,7 +7,7 @@ c = conn.cursor()
 command1 = """
     CREATE TABLE IF NOT EXISTS boxes(
         box_id INTEGER PRIMARY KEY,
-        box_name NOT NULL UNIQUE
+        box_name TEXT NOT NULL UNIQUE
     )
 """
 c.execute(command1)
