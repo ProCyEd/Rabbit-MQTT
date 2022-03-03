@@ -9,19 +9,14 @@ client2 = paho.Client('control2')
 
 # this will send to the publisher to publisher to Rabbit
 def on_message(client, userdata, message):
-    # print("received message: ", str(message.payload.decode('utf-8')))
-    # msg = str(message.payload.decode('utf-8'))
 
-    m = json.loads(message)
+    print(message.payload.decode('utf-8'))
+    m = json.loads(message.payload.decode('utf-8')) #decods the message into str then loads it into json
     method = m['method']
     if method == 'update_equipment_state':
-        updateState(m['equipment_id'], m['box_id'],
-                    m['equipment_state'])
+        updateState(m['equipment_id'], m['equipment_state'])
     # pub.publishCon(getAllBoxes())
-    # m = json.JSONDecoder.decode(message)
-    # print(msg)
-    # print(m_in)
-    # print(m)
+
 
 
 def connectCon():
