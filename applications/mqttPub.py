@@ -24,7 +24,7 @@ def connectCon():
     broker = '199.244.104.202'
     client2.username_pw_set(username='dave', password='password')
     client2.connect(broker, 1883, 60)  # keeps the mqtt broker connection open for 60 seconds
-    client2.subscribe('vmi/box1/plug1/status')  # subscribes to the topic that will return the status of the broker
+    client2.subscribe('vmi/box/plug1/status')  # subscribes to the topic that will return the status of the broker
     client2.on_message = on_message
     client2.loop_forever()
 
