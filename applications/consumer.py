@@ -1,5 +1,8 @@
 import pika, os
 import mqttCon as mqtt
+import SQLite.StoreProcedures.getEquipmentIp as ip
+import SQLite.StoreProcedures.getEquipmentType as eT
+import json
 
 url = 'amqps://msdqunsz:8HfRRHR4k_1MnSrcSnL2dFadlDbYhsGJ@fish.rmq.cloudamqp.com/msdqunsz'
 params = pika.URLParameters(url)
@@ -9,18 +12,35 @@ channel = connection.channel()  # start channel
 
 # this callback method is whats being called when you consume from rabbit
 def callback(ch, method, properties, body):
-    print(f' [x] Received {body}')
-    if str(body).__contains__('True'):
-        print(body)
-        body = 'True'
-        mqtt.connects(body)  # calls the connects method in mqtt^
-    elif str(body).__contains__('False'):
-        body = 'False'
-        mqtt.connects(body)
+
+    recivedMsg = json.dumps(body)
+    
+    topic = recivedMsg['topic']
+    command = recivedMsg['command']
+
+    print(f' [x] Received {recivedMsg}')
+
+    message = {
+            'ip': ip.getEquipIP,
+            'equipment_type': eT.getEquipType,
+            'command': command,
+            'topic': topic
+        }
+    mqtt.connects(message)
+
+    # if str(body).__contains__('True'):
+    #     print(body)
+    #     body = 'True'
+    #     mqtt.connects(body)  # calls the connects method in mqtt^
+    # elif str(body).__contains__('False'):
+    #     body = 'False'
+    #     mqtt.connects(body)
+    
 
 
 # this will consume from the frontendSend Queue in Rabbit
 channel.basic_consume(
+
     'frontendSend',
     callback,
     auto_ack=True

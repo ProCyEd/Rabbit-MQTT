@@ -15,6 +15,7 @@ def on_message(client, userdata, message):
     method = m['method']
     if method == 'update_equipment_state':
         updateState(m['equipment_id'], m['equipment_state'])
+        pub.publishCon(m)
     # pub.publishCon(getAllBoxes())
 
 
