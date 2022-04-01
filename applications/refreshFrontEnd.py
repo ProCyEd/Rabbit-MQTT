@@ -1,11 +1,10 @@
-from SQLite.StoreProcedures.getBoxes import getAllBoxes
+from SQLite.StoreProcedures.getEquipment import getAllEquipment
 import time
 import publisher.publisher as pub
 import json
 def refresh():
     while True:
 
-        l = json.dump(getAllBoxes())
-        print(l)
-        # pub.publishCon(getAllBoxes())
+        allEquipment = json.dump(getAllEquipment())
+        pub.publishCon(allEquipment)
         time.sleep(30)
