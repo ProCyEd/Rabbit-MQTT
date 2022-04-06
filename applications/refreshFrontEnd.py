@@ -7,7 +7,7 @@ def refresh(thread1):
     
         #threading.Lock(thread1)
         thread1.acquire()
-        allEquipment = json.dump(getAllEquipment())
+        allEquipment = json.dumps(getAllEquipment())
         print(allEquipment)
         pub.publishCon(allEquipment)
         print('published')
