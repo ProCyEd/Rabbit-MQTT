@@ -2,7 +2,7 @@ import sqlite3
 
 
 def updateState(id, state):
-    conn = sqlite3.connect('IoT_Boxes')
+    conn = sqlite3.connect('IoT_Boxes.sqlite')
     c = conn.cursor()
     # Query using prepared statement
     query = """UPDATE equipment SET equipment_state = ? WHERE equipment_id = ? """

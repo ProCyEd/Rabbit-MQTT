@@ -2,7 +2,7 @@ import sqlite3
 
 
 def getEquipType(equipment_id, box_id):
-    conn = sqlite3.connect('IoT_Boxes.db')
+    conn = sqlite3.connect('IoT_Boxes.sqlite')
 
     c = conn.cursor()
 
