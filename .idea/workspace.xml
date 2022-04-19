@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d68da699-3141-4ad3-8f94-a76d6df203d3" name="Changes" comment="changes">
-      <change beforePath="$PROJECT_DIR$/applications/mqttPub.py" beforeDir="false" afterPath="$PROJECT_DIR$/applications/mqttPub.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IoT_Boxes.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/IoT_Boxes.sqlite" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -234,6 +237,7 @@
       <workItem from="1646257393490" duration="388000" />
       <workItem from="1646343155221" duration="3558000" />
       <workItem from="1648590245355" duration="217000" />
+      <workItem from="1650399328857" duration="1807000" />
     </task>
     <task id="LOCAL-00001" summary="fixed all the import issues and go the database up and running">
       <created>1644465323132</created>
