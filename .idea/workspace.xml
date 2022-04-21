@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d68da699-3141-4ad3-8f94-a76d6df203d3" name="Changes" comment="changes">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+    <list default="true" id="d68da699-3141-4ad3-8f94-a76d6df203d3" name="Changes" comment="added Dr. Azabs additions">
+      <change afterPath="$PROJECT_DIR$/applications/IoTManageConsumer.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IoT_Boxes.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/IoT_Boxes.sqlite" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/applications/SQLite/StoreProcedures/getEquipmentIp.py" beforeDir="false" afterPath="$PROJECT_DIR$/applications/SQLite/StoreProcedures/getEquipmentIp.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/applications/SQLite/StoreProcedures/insertBoxes.py" beforeDir="false" afterPath="$PROJECT_DIR$/applications/SQLite/StoreProcedures/insertBoxes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/applications/consumer.py" beforeDir="false" afterPath="$PROJECT_DIR$/applications/IoTConsumer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/applications/mqttPub.py" beforeDir="false" afterPath="$PROJECT_DIR$/applications/mqttPub.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/applications/publisher/publisher.py" beforeDir="false" afterPath="$PROJECT_DIR$/applications/publisher/IoTPublisher.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/applications/refreshFrontEnd.py" beforeDir="false" afterPath="$PROJECT_DIR$/applications/refreshFrontEnd.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +51,50 @@
     </key>
   </component>
   <component name="RunManager" selected="Python.mqttPub">
+    <configuration name="IoTConsumer" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Rabbit-MQTT" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/applications" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\cammi\Documents\GitHub\Rabbit-MQTT\applications\IoTConsumer.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="IoTPublisher" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Rabbit-MQTT" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/applications/publisher" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\cammi\Documents\GitHub\Rabbit-MQTT\applications\publisher\IoTPublisher.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="Rabbit-MQTT" type="PythonConfigurationType" factoryName="Python">
       <module name="Rabbit-MQTT" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -61,28 +109,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/app.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="consumer" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Rabbit-MQTT" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/applications" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/applications/consumer.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -157,28 +183,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="publisher" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Rabbit-MQTT" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/applications/publisher" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/applications/publisher/publisher.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="refreshFrontEnd" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Rabbit-MQTT" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -204,8 +208,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.mqttPub" />
-        <item itemvalue="Python.consumer" />
-        <item itemvalue="Python.publisher" />
+        <item itemvalue="Python.IoTConsumer" />
+        <item itemvalue="Python.IoTPublisher" />
         <item itemvalue="Python.mqttCon" />
         <item itemvalue="Python.refreshFrontEnd" />
       </list>
@@ -237,7 +241,8 @@
       <workItem from="1646257393490" duration="388000" />
       <workItem from="1646343155221" duration="3558000" />
       <workItem from="1648590245355" duration="217000" />
-      <workItem from="1650399328857" duration="1807000" />
+      <workItem from="1650399328857" duration="2525000" />
+      <workItem from="1650573042253" duration="3871000" />
     </task>
     <task id="LOCAL-00001" summary="fixed all the import issues and go the database up and running">
       <created>1644465323132</created>
@@ -323,7 +328,14 @@
       <option name="project" value="LOCAL" />
       <updated>1646257410448</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="added Dr. Azabs additions">
+      <created>1650401696891</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1650401696891</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -351,7 +363,8 @@
     <MESSAGE value="document everything" />
     <MESSAGE value="dynamically add queue, front and back queus. the frontend manager will call this function and pass in a front and back queue names." />
     <MESSAGE value="changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="changes" />
+    <MESSAGE value="added Dr. Azabs additions" />
+    <option name="LAST_COMMIT_MESSAGE" value="added Dr. Azabs additions" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

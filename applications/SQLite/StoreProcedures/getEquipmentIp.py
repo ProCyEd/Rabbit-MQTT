@@ -15,3 +15,4 @@ def getEquipIP(equipment_id, box_id):
     conn.commit()
     conn.close()
     return items
+

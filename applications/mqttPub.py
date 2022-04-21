@@ -1,5 +1,5 @@
 import paho.mqtt.client as paho
-import publisher.publisher as pub
+import publisher.IoTPublisher as pub
 import json
 from SQLite.StoreProcedures.getBoxes import getAllBoxes
 from SQLite.StoreProcedures.updateEquipment import updateState
@@ -19,10 +19,7 @@ def on_message(client, userdata, message):
     if method == 'update_equipment_state':
         updateState(m['equipment_id'], m['equipment_state'])
         pub.publishCon(m)
-    elif method == 'insert_boxes':
-        insertBoxes(m['box_id'], m['box_name'])
-    elif method == 'insert_equipment':
-        insertEquipment(m['equipment_id'], m['box_id'],m['equipment_name'],m['equipment_state'], m['equipment_ip'])
+
     
     # pub.publishCon(getAllBoxes())
 
