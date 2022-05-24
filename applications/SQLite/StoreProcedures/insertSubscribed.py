@@ -2,7 +2,7 @@ import sqlite3
 
 
 def insertSubscribed(user_ip, session_token):
-    conn = sqlite3.connect('IoT_Boxes')
+    conn = sqlite3.connect('IoT_Boxes.sqlite')
 
     c = conn.cursor()
     # Query using prepared statement

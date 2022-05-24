@@ -2,7 +2,7 @@ import sqlite3
 
 
 def removeToken(session_token):
-    conn = sqlite3.connect('IoT_Boxes')
+    conn = sqlite3.connect('IoT_Boxes.sqlite')
 
     c = conn.cursor()
     # Query using prepared statement

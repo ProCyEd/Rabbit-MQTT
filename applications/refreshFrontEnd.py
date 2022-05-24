@@ -1,11 +1,22 @@
+from SQLite.StoreProcedures.getEquipment import getAllEquipment
 from SQLite.StoreProcedures.getBoxes import getAllBoxes
 import time
-import publisher.publisher as pub
+import publisher.IoTPublisher as pub
 import json
-def refresh():
-    while True:
+import threading
 
-        l = json.dump(getAllBoxes())
-        print(l)
-        # pub.publishCon(getAllBoxes())
-        time.sleep(30)
+
+def refresh(thread1):
+    # threading.Lock(thread1)
+    thread1.acquire()
+    allEquipment = json.dumps(getAllEquipment())
+    allboxes = json.dumps(getAllBoxes())
+    print(allEquipment)
+    print(allboxes)
+
+    pub.publishCon(allEquipment)
+    pub.publishCon(allboxes)
+    print('published')
+    thread1.release()
+    time.sleep(30)
+    refresh(thread1)

@@ -1,13 +1,13 @@
 import sqlite3
 
 
-def getEquipIP(equipment_id, box_id):
+def getEquipType(equipment_id, box_id):
     conn = sqlite3.connect('IoT_Boxes.sqlite')
 
     c = conn.cursor()
 
     # Query using prepared statement
-    query = """SELECT equipment_ip FROM equipment WHERE equipment.equipment_id = ? AND equipment.box_sid = ?"""
+    query = """SELECT equipment_name FROM equipment WHERE equipment.equipment_id = ? AND equipment.box_sid = ?"""
     t = (equipment_id, box_id)
     c.execute(query, t)
 
@@ -15,4 +15,3 @@ def getEquipIP(equipment_id, box_id):
     conn.commit()
     conn.close()
     return items
-

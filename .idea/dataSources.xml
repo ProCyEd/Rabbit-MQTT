@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="IoT_Boxes [2]" uuid="5c418b7c-8630-4351-a688-cd2e60c72e36">
+    <data-source source="LOCAL" name="IoT_Boxes [2]" uuid="38033b70-9df4-496e-8bdb-049246e6d909">
       <driver-ref>sqlite.xerial</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
-      <jdbc-url>jdbc:sqlite:C:\Users\cammi\Documents\GitHub\Rabbit-MQTT\applications\IoT_Boxes</jdbc-url>
+      <jdbc-url>jdbc:sqlite:C:\Users\cammi\Documents\GitHub\Rabbit-MQTT\IoT_Boxes.sqlite</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
       <libraries>
         <library>
